@@ -1,0 +1,442 @@
+﻿<!doctype html>
+<html>
+
+<head>
+ 
+    <meta charset="utf-8">
+    <!-- IE将使用最新的引擎渲染网页 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 页面的宽度与设备屏幕的宽度一致初始缩放比例 1:1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!-- Bootstrap -->
+<script type="text/javascript" src="js/jquery.min.js">
+</script>
+<script type="text/javascript" src="js/bootstrap.min.js">
+</script>
+
+
+<!-- Stylesheets -->
+ 
+<link href="css/main.css" rel="stylesheet" type="text/css"/>
+<link href="css/syntax.css" rel="stylesheet" type="text/css"/>
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css"/>
+
+<!-- Javascript -->
+
+<!--时间-->
+<script type="text/javascript">
+function getCurDate()  
+{  
+ var d = new Date();  
+ var week;  
+ switch (d.getDay()){  
+ case 1: week="星期一"; break;  
+ case 2: week="星期二"; break;  
+ case 3: week="星期三"; break;  
+ case 4: week="星期四"; break;  
+ case 5: week="星期五"; break;  
+ case 6: week="星期六"; break;  
+ default: week="星期天";  
+ }  
+ var years = d.getFullYear();  
+ var month = add_zero(d.getMonth()+1);  
+ var days = add_zero(d.getDay());  
+ var hours = add_zero(d.getHours());  
+ var minutes = add_zero(d.getMinutes());  
+ var seconds=add_zero(d.getSeconds());  
+ var ndate = years+"年"+month+"月"+days+"日 "+hours+":"+minutes+":"+seconds+" "+week;  
+ //yyyy-mm-dd-hh-mm-ss
+ var time = document.getElementById("time");
+     time.innerHTML= ndate;  
+}  
+ //自动补0  
+function add_zero(temp)  
+{  
+ if(temp<10) return "0"+temp;  
+ else return temp;  
+}  
+//使用定时器每秒向div写入当前时间
+setInterval("getCurDate()",1000); 
+</script>
+
+<!--
+<script type="text/javascript">
+var t = null;
+function time()
+{
+ dt = new Date();
+ var y=dt.getFullYear();
+ var mon=dt.getMonth();
+ var d=dt.getDay();
+ var h=dt.getHours();
+ var m=dt.getMinutes();
+ var s=dt.getSeconds();
+ document.getElementById("timeShow").innerHTML=y+":"+h+":"+m+":"+s;
+ t = setTimeout(time,1000);    
+} 
+window.onload=function()
+{
+	time()
+}
+</script>
+
+<script type="text/javascript">
+
+</script>
+
+-->
+
+<title>Yao
+</title>
+
+</head>
+
+<body>
+
+<!-- 导航栏 -->
+
+<div class="navbar navbar-default navbar-static-top" role="navigation" >
+  <div class="container">
+         <div class="navbar-header">
+             <button type="button" class="navbar-toggle collapsed"
+              data-toggle="collapse" data-target="#navbar"
+              aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+             </button>
+             <a href="##" class="navbar-brand">
+             </a>
+           </div>
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="./index.html">首页
+                    </a>
+                </li>
+                <li><a href="./Research.html">Research
+                </a> 
+                </li>
+                <li><a href="./Publications.html">Publications
+                </a> 
+                </li>
+                <li><a href="./People.html">People
+                </a> 
+                </li>
+                <li><a href="./Activities.html">Activities
+                </a> 
+                </li>
+                <li><a href="./Teaching.html">Teaching
+                </a> 
+                </li>
+                 <li class="dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Interests
+                    <span class="caret">
+                    </span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li>
+                        <a href="./CV.html">Computer Vision
+                        </a> 
+                        </li>
+                        <li>
+                        <a href="./ML.html">Machine Learning
+                        </a>
+                        </li>
+                        <li >
+                        <a href="./MM.html">Multimedia
+                        </a>
+                        </li>
+                    </ul>        
+                </li>
+            </ul> 
+   
+</div>
+</div>
+    
+
+<div class="container">
+
+ <div class="row">
+ <!-- zhaopian-->
+ <!--  
+     <div class="col-xs-4 col-sm-3 col-md-2 bottom-buffer" style="padding-right:0;">
+      <img style="width:100%;" alt="YZ YAO"
+         src="./1.jpg"/>
+     </div> 
+   -->
+  <div class="col-xs-8 col-sm-4 col-md-4 bottom-buffer">
+    YaZhou Yao（姚亚洲）,&nbsp;Ph.D.
+    <br/>
+    Global Big Data Technologies Center, University of Technology Sydney, Australia
+    <br/>
+	    <ul class="list-unstyled">
+            <li>
+            <i class="fa fa-envelope-o ">
+            </i>
+            &nbsp;Yazhou.Yao@outlook.com
+            </li>
+	      </ul>
+  </div>
+  <div class="col-xs-12 col-sm-5 col-md-6 bottom-buffer">
+   <div class="text-left">
+ 	<a href="http://www.njust.edu.cn/" target="_blank">
+    <img alt="njust" 
+    style="vertical-align:middle; height:2.8em;"
+    src="./njust.png"/>
+    </a>
+   </div>
+  
+  </div>
+</div>
+
+<p>I am currently a Professor at School of Computer Science and Engineering, 
+  <a href="http://www.njust.edu.cn/" target="_blank">
+Nanjing University of Science and Technology 
+  </a>.
+ I obtained my Ph.D. degree in June 2018 from Global Big Data Technologies Center, 
+  <a href="https://www.uts.edu.au/" target="_blank">University of Technology Sydney
+  </a>, 
+Australia (advised by Prof. Jian Zhang). From July 2018 to July 2019, I worked as a Research Scientist at Inception Institute of 
+Artificial Intelligence, Abu Dhabi, UAE (led by Prof. Ling Shao). From 2013 to 2014, I studied at the School of computer science 
+and engineering, Nanjing University of Science and Technology, advised by Prof. Zhenmin Tang. I obtained my Bachelor and Master 
+degree in 2010 and 2013 from 
+  <a href="http://en.njnu.edu.cn/" target="_blank">
+Nanjing Normal University
+  </a>. 
+</p>
+
+<p>
+  <strong>Research interests:
+  </strong> Multimedia, Computer Vision, and Machine Learning. 
+</p>
+
+<!--
+  <div id="future-student">
+<a href="#student" data-toggle="collapse"> 
+<i class="fa fa-user" ></i>&nbsp Students 
+</a>
+</div>
+<blockquote id="student" class="collapse">
+<p>
+<b>I
+</b>
+</p>
+
+</blockquote>
+-->
+
+   
+<!-- 表格 -->
+
+<h2>Experience
+</h2>
+<table  class="table table-bordered">
+<tbody>
+<tr>
+  <td width=20% align="left">Professor
+  </td>
+  <td width=50% align="left">南京理工大学
+  </td>
+  <td  align="left">2019.07 ~ present
+  </td>
+</tr>
+
+<tr>
+  <td align="left">Ph.D.
+  </td>
+  <td align="left">起源人工智能研究院 (Inception Institute of Artificial Intelligence, UAE)
+  </td>
+  <td align="left">2018.06 – 2019.06
+  </td>
+</tr>
+<tr>
+  <td align="left">Ph.D.
+  </td>
+  <td align="left">悉尼科技大学 (University of Technology Sydney, Australia)
+  </td>
+  <td align="left">2014.07 – 2018.06
+  </td>
+</tr>
+<tr>
+  <td align="left">Bachelor
+  </td>
+  <td align="left">南京理工大学
+  </td>
+  <td align="left">2013.09 – 2014.06
+  </td>
+</tr>
+<tr>
+  <td align="left">Bachelor
+  </td>
+  <td align="left">南京师范大学
+  </td>
+  <td align="left">2006.09 – 2013.06
+  </td>
+</tr>
+
+</tbody>
+</table>
+
+
+<!--   论文目录  -->
+
+<h2 class="clearfix" >Selected publications 
+  <a class="btn btn-link pull-right" href='./Publications.html'>More papers
+  </a>
+</h2>
+
+<ul>
+   <li id="h.1" class="pub" style="margin-bottom:-10px;">Chuanyi Zhang, 
+     <strong>Yazhou Yao
+     </strong>, 
+   Huafeng Liu, Guosen Xie, Xiangbo Shu, Tianfei Zhou, Zheng Zhang, Fumin Shen, Zhenmin Tang,"Web-Supervised Network with Softly 
+  Update-Drop Training for Fine-Grained Visual Classification", AAAI Conference on Artificial Intelligence (
+    <strong>AAAI
+    </strong>
+ ), 2020.
+ </li>
+<hr />
+
+  <li id="h.2" class="pub" style="margin-bottom:-10px;">Tianfei Zhou, Shunzhou Wang, Yi Zhou, 
+    <strong>Yazhou Yao
+    </strong>,
+   Jianwu Li, Ling Shao, "Motion-Attentive Transition for Zero-Shot Video Object Segmentation", AAAI Conference on Artificial 
+  Intelligence (
+     <strong>AAAI
+     </strong>), 2020.
+     </li>
+<hr />
+
+  <li id="h.3" class="pub" style="margin-bottom:-10px;">
+    <strong>Yazhou Yao
+    </strong>, 
+  Fumin Shen, Guosen Xie, Li Liu, Fan Zhu, Jian Zhang, Hengtao Shen. "Exploiting Web Images for Multi-output Classification: From 
+ Category to Subcategories", IEEE Transactions on Neural Networks and Learning Systems (
+    <strong>TNNLS
+    </strong>), 2019. 
+  </li>
+<hr />
+
+  <li id="h.4" class="pub" style="margin-bottom:-10px;">
+    <strong>Yazhou Yao
+    </strong>, Jian Zhang, Fumin Shen, Li Liu, Fan Zhu, Dongxiang Zhang, and Heng-Tao Shen. "Towards Automatic Construction of ‘
+   Diverse, High-quality Image Dataset", IEEE Transactions on Knowledge and Data Engineering (
+    <strong>TKDE
+    </strong>), 2019.
+  </li>
+<hr />
+
+  <li id="h.5" class="pub" style="margin-bottom:-10px;">
+  Lizhong Ding, Shizhong Liao, Yong Liu, Li Liu, Fan Zhu, 
+    <strong>Yazhou Yao
+    </strong>, Ling Shao, Xin Gao, "Approximate Kernel Selection via Matrix Approximation", IEEE Transactions on Neural Networks 
+   and Learning Systems (
+    <strong>TNNLS
+    </strong>), 2019. 
+  </li>
+<hr />
+
+  <li id="h.6" class="pub" style="margin-bottom:-10px;">Haonan Luo, Guosheng Lin, Zichuan Liu, 
+    <strong>Yazhou Yao
+    </strong>, Zhenmin Tang, “SegEQA: Video Segmentation based Visual Attention for Embodied Question Answering”, IEEE 
+   International Conference on Computer Vision (
+    <strong>ICCV
+    </strong>), 2019.
+   </li>
+<hr />
+
+  <li id="h.7" class="pub" style="margin-bottom:-10px;">Guo-Sen Xie, Li Liu, Xiao-Bo Jin, Fan Zhu, Zheng Zhang, Jie Qin, 
+    <strong>Yazhou Yao
+    </strong>, and Ling Shao, "Attentive Region Embedding Network for Zero-shot Learning", IEEE International Conference on 
+   Computer Vision and Pattern Recognition (
+    <strong>CVPR
+    </strong>), 2019.
+    </li>
+<hr />
+
+  <li id="h.8" class="pub" style="margin-bottom:-10px;">
+    <strong>Yazhou Yao
+    </strong>, Zeren Sun, Fumin Shen, Li Liu, Limin Wang, Fan Zhu, Lizhong Ding, Gangshan Wu, Ling Shao. "Dynamically Visual  
+  Disambiguation of Keyword-based Image Search", International Joint Conference on Artificial Intelligence (
+    <strong>IJCAI
+    </strong>), 2019.
+    </li>
+<hr />
+
+  <li id="h.9" class="pub" style="margin-bottom:-10px;">
+    <strong>Yazhou Yao
+    </strong>, Fumin Shen, Jian Zhang, Li Liu, Zhenmin Tang and Ling Shao. "Extracting Privileged Information for Enhancing  
+  Classifier Learning", IEEE Transactions on Image Processing(
+    <strong>TIP
+    </strong>), 2018.
+    </li>
+<hr />
+
+  <li id="h.10" class="pub" style="margin-bottom:-10px;">
+    <strong>Yazhou Yao
+    </strong>, Fumin Shen, Jian Zhang, Li Liu, Zhenmin Tang and Ling Shao. "Extracting Multiple Visual Senses for Web Learning ", 
+    IEEE Transactions on Multimedia (
+    <strong>TMM
+    </strong>), 2018.
+    </li>
+<hr />
+
+  <li id="h.11" class="pub" style="margin-bottom:-10px;">
+    <strong>Yazhou Yao
+    </strong>, Jian Zhang, Fumin Shen, Wankou Yang, Pu Huang and Zhenmin Tang. “Discovering and Distinguishing Multiple Visual 
+    Senses for Polysemous Words”, AAAI Conference on Artificial Intelligence (
+    <strong>AAAI
+    </strong>), 2018.
+    </li>
+<hr />
+
+  <li id="h.12" class="pub" style="margin-bottom:-10px;">
+    <strong>Yazhou Yao
+    </strong>, Jian Zhang, Fumin Shen, Wankou Yang, Xiansheng Hua and Zhenmin Tang. “Extracting Privileged Information from 
+    Untagged Corpora for Classifier Learning”, International Joint Conference on Artificial Intelligence (
+    <strong>IJCAI
+    </strong>), 2018.
+  </li>
+<hr />
+
+  <li id="h.13" class="pub" style="margin-bottom:-10px;">
+    <strong>Yazhou Yao
+    </strong>, Jian Zhang, Fumin Shen, Xian-Sheng Hua, Jingsong Xu and Zhenmin Tang. "Exploiting Web Images for Dataset 
+    Construction: A Domain Robust Approach", IEEE Transactions on Multimedia (
+    <strong>TMM
+    </strong>), 2017.
+    </li>
+<hr />
+
+  <li id="h.14" class="pub" style="margin-bottom:-10px;">
+    <strong>Yazhou Yao
+    </strong>, Xiansheng Hua, Fumin Shen, Jian Zhang and Zhenmin Tang. "A Domain Robust Approach for Image Dataset Construction ",
+    ACM International Conference on Multimedia (
+    <strong>ACM MM
+    </strong>), 2016.
+    </li>
+<hr />
+
+  <li id="h.15" class="pub" style="margin-bottom:-10px;">
+    <strong>Yazhou Yao
+    </strong>, Jian Zhang, Fumin Shen, Xian-Sheng Hua, Jingsong Xu and Zhenmin Tang. "Automatic Image Dataset Construction with 
+    Multiple Textual Metadata", IEEE Conference on Multimedia and Expo (
+    <strong>ICME
+    </strong>), 2016.
+    </li>
+<hr />
+
+</ul>
+
+<br>
+
+<br>
+<!--
+   <div id="time"></div> 
+ -->
+</div>
+</body>
+</html>

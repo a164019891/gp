@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- IE将使用最新的引擎渲染网页 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 页面的宽度与设备屏幕的宽度一致初始缩放比例 1:1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!-- Bootstrap -->
+<script type="text/javascript" src="js/jquery.min.js">
+</script>
+<script type="text/javascript" src="js/bootstrap.min.js">
+</script>
+
+
+<!-- Stylesheets -->
+ 
+<link href="css/main.css" rel="stylesheet" type="text/css"/>
+<link href="css/syntax.css" rel="stylesheet" type="text/css"/>
+
+
+<!--时间-->
+<script type="text/javascript">
+function getCurDate()  
+{  
+ var d = new Date();  
+ var week;  
+ switch (d.getDay()){  
+ case 1: week="星期一"; break;  
+ case 2: week="星期二"; break;  
+ case 3: week="星期三"; break;  
+ case 4: week="星期四"; break;  
+ case 5: week="星期五"; break;  
+ case 6: week="星期六"; break;  
+ default: week="星期天";  
+ }  
+ var years = d.getFullYear();  
+ var month = add_zero(d.getMonth()+1);  
+ var days = add_zero(d.getDay());  
+ var hours = add_zero(d.getHours());  
+ var minutes = add_zero(d.getMinutes());  
+ var seconds=add_zero(d.getSeconds());  
+ var ndate = years+"年"+month+"月"+days+"日 "+hours+":"+minutes+":"+seconds+" "+week;  
+ //yyyy-mm-dd-hh-mm-ss
+ var time = document.getElementById("time");
+     time.innerHTML= ndate;  
+}  
+ //自动补0  
+function add_zero(temp)  
+{  
+ if(temp<10) return "0"+temp;  
+ else return temp;  
+}  
+//使用定时器每秒向div写入当前时间
+setInterval("getCurDate()",1000); 
+</script>
+
+<!--
+<script type="text/javascript">
+var t = null;
+function time()
+{
+ dt = new Date();
+ var y=dt.getFullYear();
+ var mon=dt.getMonth();
+ var d=dt.getDay();
+ var h=dt.getHours();
+ var m=dt.getMinutes();
+ var s=dt.getSeconds();
+ document.getElementById("timeShow").innerHTML=y+":"+h+":"+m+":"+s;
+ t = setTimeout(time,1000);    
+} 
+window.onload=function()
+{
+	time()
+}
+</script>
+
+<script type="text/javascript">
+
+</script>
+
+-->
+
+
+<title>Research
+</title>
+
+</head>
+
+<body>
+
+<!-- 导航栏 -->
+<div class="navbar navbar-default navbar-static-top" role="navigation" >
+  <div class="container">
+         <div class="navbar-header">
+             <button type="button" class="navbar-toggle collapsed"
+              data-toggle="collapse" data-target="#navbar"
+              aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+             </button>
+             <a href="##" class="navbar-brand">
+             </a>
+           </div>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="./index.html">首页
+                    </a>
+                </li>
+                <li class="active"><a href="./Research.html">Research
+                </a> 
+                </li>
+                <li><a href="./Publications.html">Publications
+                </a> 
+                </li>
+                <li><a href="./People.html">People
+                </a> 
+                </li>
+                <li ><a href="./Activities.html">Activities
+                </a> 
+                </li>
+                <li><a href="./Teaching.html">Teaching
+                </a> 
+                </li>
+                 <li class="dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Interests
+                    <span class="caret">
+                    </span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li>
+                        <a href="./CV.html">Computer Vision
+                        </a> 
+                        </li>
+                        <li>
+                        <a href="./ML.html">Machine Learning
+                        </a>
+                        </li>
+                        <li>
+                        <a href="./MM.html">Multimedia
+                        </a>
+                        </li>
+                    </ul>        
+                </li>
+            </ul> 
+   
+</div>
+</div>
+
+ <div class="container">
+ 
+ <!--Research 
+ projects-->
+<h2>Research projects
+</h2>
+
+
+<div class="panel panel-default">
+
+<div class="panel-heading">Fine-Grained Visual Classification
+
+<a class="btn btn-link pull-right" href='./CV.html'>More
+</a>
+
+</div>
+
+<div class="panel-body">
+
+<p>
+&nbsp &nbsp Computer vision (CV) is an interdisciplinary scientific field of artificial intelligence (AI), which deals with how 
+computers can be made to gain high-level understanding from digital images or videos. The tasks of computer vision include methods
+ for acquiring, processing, analyzing and understanding digital images, and the process of extracting numerical or symbolic 
+information, e.g., in the forms of decisions or predictions, from high-dimensional raw image data in the real world.As an 
+interesting, fundamental and challenging problem in computer vision, fine-grained image analysis (FGIA) has been an active area oZ
+ research for several decades. The goal of FGIA is to retrieve, recognize and generate images belonging to multiple subordinate 
+categories of a super-category (akameta-category), e.g., different species of animals/plants, different models of cars, different 
+kinds of retail products, etc. In the real-world, FGIA enjoys a wide-range of applications in both industry and research 
+societies, such as automatic biodiversity monitoring, climate change evaluation, intelligent retail, intelligent transportation, 
+and many more. Particularly, a number of influential academic competitions about FGIA are frequently held on Kaggle.Several 
+representative competitions, to name a few, are the Nature Conservancy Fisheries Monitoring (for fish species categorization), 
+Humpback Whale Identification (for whale identity categorization) and so on. Each competition attracted more than 300 teams 
+worldwide to participate, and some even exceeded 2,000 teams.
+</p>
+
+
+</div>
+</div>
+
+<div class="panel panel-default">
+
+<div class="panel-heading">Machine Learning
+<a class="btn btn-link pull-right" href='./ML.html'>More
+</a>
+
+</div>
+<div class="panel-body">
+
+<p>
+&nbsp &nbsp Machine learning is the science of getting computers to act without being explicitly programmed. In the past decade, 
+machine 
+ learning has given us self-driving cars, practical speech recognition, effective web search, and a vastly improved understanding 
+of the human genome. Machine learning is so pervasive today that you probably use it dozens of times a day without knowing it. 
+Many researchers also think it is the best way to make progress towards human-level AI. In this class, you will learn about the 
+most effective machine learning techniques, and gain practice implementing them and getting them to work for yourself. More 
+importantly, you'll learn about not only the theoretical underpinnings of learning, but also gain the practical know-how needed to
+ quickly and powerfully apply these techniques to new problems. Finally, you'll learn about some of Silicon Valley's best 
+practices in innovation as it pertains to machine learning and AI.
+</p>
+
+</div>
+</div>
+
+<div class="panel panel-default">
+
+<div class="panel-heading">Multi-view Gait Recognition
+<a class="btn btn-link pull-right" href='./MM.html'>More
+</a>
+</div>
+
+<div class="panel-body">
+
+<p>
+&nbsp &nbsp As one of biometric identification methods, gait recognition has many advantages. It is suitable for human 
+identification at 
+a long distance, requiring no contact and hard to imitate. One of the most important factors that affect the performance of gait 
+recognition is that the change of view or the direction of the walk, which makes the human silhouette have a large variation. 
+</p>
+
+
+</div>
+</div>
+
+
+<h2>Research grants
+</h2>
+
+<table  class="table table-hover ">
+<tbody>
+  <tr>
+   <td width=40% align="left">基于深度学习的细粒度图像识别研究
+   </td>
+   <td width=40% align="left">南京理工大学
+   </td>
+   <td width=10% align="left">主持
+   </td>
+   <td width=10% align="left">2019-2021
+   </td>
+  </tr>
+  <tr>
+   <td  align="left">基于WEB图像的无监督细粒度识别研究
+   </td>
+   <td align="left">国家自然科学基金面上项目
+   </td>
+   <td  align="left">参与
+   </td>
+   <td align="left">2020-2023
+   </td>
+  </tr>
+  <tr>
+   <td lign="left">基于回归的视角转换框架下的多视角行人步态识别
+   </td>
+   <td  align="left">国家自然科学基金面上项目
+   </td>
+   <td  align="left">参与
+   </td>
+   <td  align="left">2015-2018
+   </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+
+</body>
+</html>

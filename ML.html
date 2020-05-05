@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- IE将使用最新的引擎渲染网页 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 页面的宽度与设备屏幕的宽度一致初始缩放比例 1:1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!-- Bootstrap -->
+<script type="text/javascript" src="js/jquery.min.js">
+</script>
+<script type="text/javascript" src="js/bootstrap.min.js">
+</script>
+
+
+<!-- Stylesheets -->
+ 
+<link href="css/main.css" rel="stylesheet" type="text/css"/>
+<link href="css/syntax.css" rel="stylesheet" type="text/css"/>
+
+
+<!--时间-->
+<script type="text/javascript">
+function getCurDate()  
+{  
+ var d = new Date();  
+ var week;  
+ switch (d.getDay()){  
+ case 1: week="星期一"; break;  
+ case 2: week="星期二"; break;  
+ case 3: week="星期三"; break;  
+ case 4: week="星期四"; break;  
+ case 5: week="星期五"; break;  
+ case 6: week="星期六"; break;  
+ default: week="星期天";  
+ }  
+ var years = d.getFullYear();  
+ var month = add_zero(d.getMonth()+1);  
+ var days = add_zero(d.getDay());  
+ var hours = add_zero(d.getHours());  
+ var minutes = add_zero(d.getMinutes());  
+ var seconds=add_zero(d.getSeconds());  
+ var ndate = years+"年"+month+"月"+days+"日 "+hours+":"+minutes+":"+seconds+" "+week;  
+ //yyyy-mm-dd-hh-mm-ss
+ var time = document.getElementById("time");
+     time.innerHTML= ndate;  
+}  
+ //自动补0  
+function add_zero(temp)  
+{  
+ if(temp<10) return "0"+temp;  
+ else return temp;  
+}  
+//使用定时器每秒向div写入当前时间
+setInterval("getCurDate()",1000); 
+</script>
+
+<!--
+<script type="text/javascript">
+var t = null;
+function time()
+{
+ dt = new Date();
+ var y=dt.getFullYear();
+ var mon=dt.getMonth();
+ var d=dt.getDay();
+ var h=dt.getHours();
+ var m=dt.getMinutes();
+ var s=dt.getSeconds();
+ document.getElementById("timeShow").innerHTML=y+":"+h+":"+m+":"+s;
+ t = setTimeout(time,1000);    
+} 
+window.onload=function()
+{
+	time()
+}
+</script>
+
+<script type="text/javascript">
+
+</script>
+
+-->
+
+
+<title>Machine Learning
+</title>
+</head>
+
+<body>
+
+<!-- 导航栏 -->
+<div class="navbar navbar-default navbar-static-top" role="navigation" >
+  <div class="container">
+         <div class="navbar-header">
+             <button type="button" class="navbar-toggle collapsed"
+              data-toggle="collapse" data-target="#navbar"
+              aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+             </button>
+             <a href="##" class="navbar-brand">
+             </a>
+           </div>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="./index.html">首页
+                    </a>
+                </li>
+                <li><a href="./Research.html">Research
+                </a> 
+                </li>
+                <li><a href="./Publications.html">Publications
+                </a> 
+                </li>
+                <li><a href="./People.html">People
+                </a> 
+                </li>
+                <li ><a href="./Activities.html">Activities
+                </a> 
+                </li>
+                <li><a href="./Teaching.html">Teaching
+                </a> 
+                </li>
+                 <li class="dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Interests
+                    <span class="caret">
+                    </span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li>
+                        <a href="./CV.html">Computer Vision
+                        </a> 
+                        </li>
+                        <li class="active">
+                        <a href="./ML.html">Machine Learning
+                        </a>
+                        </li>
+                        <li >
+                        <a href="./MM.html">Multimedia
+                        </a>
+                        </li>
+                    </ul>        
+                </li>
+            </ul> 
+   
+</div>
+</div>
+
+
+
+<div class="container">  
+
+<!--machine learning -->
+
+<h3>Machine Learning
+</h3>
+
+<h4>Definitions
+</h4>
+<ul>
+
+<li>Machine learning is a science of the artificial. The field's main objects of study are artifacts, specifically algorithms that
+ improve their performance with experience.’
+<br>
+Langley, 1996
+</li>
+
+<li>Machine Learning is the study of computer algorithms that improve automatically through experience.’
+<br>
+Mitchell, 1997
+</li>
+
+<li>Machine learning is programming computers to optimize a performance criterion using example data or past experience.’
+<br>
+Alpaydin, 2004
+</li>
+
+<li>‘Machine learning is an area of artificial intelligence concerned with the development of techniques which allow computers to 
+“learn”.’
+<br>
+Wikipedia, 2005
+</li>
+
+<li>‘A field of AI concerned with programs that learn. It includes Reinforcement Learning and Neural Networks among many other 
+fields.’
+<br>
+Artificial Intelligence FAQ, 2004
+</li>
+
+<li>Machine learning is an area of artificial intelligence concerned with the study of computer algorithms that improve 
+automatically through experience. In practice, this involves creating programs that optimize a performance criterion through the 
+analysis of data.
+<br>
+Sewell, 2006
+</li>
+
+</ul>
+ 
+<h4>Books
+</h4>
+ 
+  <ul>
+   <li>ALPAYDIN, Ethem, 2004. Introduction to Machine Learning. Cambridge, MA: The MIT Press.
+   </li>
+   <li>BISHOP, Christopher M., 2006. Pattern Recognition and Machine Learning. Information Science and Statistics. New York: Springer.
+   </li>
+   <li>LANGLEY, Pat, 1996. Elements of Machine Learning. San Francisco, CA: Morgan Kaufmann.
+   </li>
+   <li>MITCHELL, Tom M., 1997. Machine Learning. New York: McGraw-Hill.
+   </li>
+  </ul>
+<h4>Links
+</h4>
+ <ul>
+ <li>
+ <a href="http://en.wikipedia.org/wiki/Category:Machine_learning">Wikipedia: Category:Machine learning
+ </a>
+ </li>
+ <li>
+ <a href="http://en.wikipedia.org/wiki/Machine_learning">Wikipedia: Machine learning 
+ </a>
+ </li>
+ <li>
+ <a href="http://directory.google.com/Top/Computers/Artificial_Intelligence/Machine_Learning/">Google Directory
+ </a>
+ </li>
+ <li>
+ <a href="http://www.aic.nrl.navy.mil/~aha/research/machine-learning.html">Machine Learning Resources by David W. Aha
+ </a>
+ </li>
+ <li>
+ <a href="http://www.martinsewell.com/ann/">Artificial Neural Networks (ANNs)
+ </a>
+ </li>
+ <li>
+ <a href="http://www.svms.org/">Support Vector Machines (SVMs) 
+ </a>
+ </li>
+ <li>
+ <a href="http://machine-learning.martinsewell.com/statistics.html">Machine Learning and Statistics 
+ </a>
+ </li>
+ <li><a href=http://hunch.net/?p=224"">Machine Learning (Theory) » All Models of Learning have Flaws 
+ </a>
+ </li>
+ </ul>
+<h4>
+<a href="https://www.coursera.org/learn/machine-learning" target="_blank">Course
+</a>
+</h4>
+
+<P>
+  &nbsp &nbsp This course provides a broad introduction to machine learning, datamining, and statistical pattern recognition. 
+ Topics include: (i) Supervised learning (parametric/non-parametric algorithms, support vector machines, kernels, neural 
+networks). (ii) Unsupervised learning (clustering, dimensionality reduction, recommender systems, deep learning). (iii) Best 
+practices in machine learning (bias/variance theory; innovation process in machine learning and AI). The course will also draw 
+from numerous case studies and applications, so that you'll also learn how to apply learning algorithms to building smart robots 
+(perception, control), text understanding (web search, anti-spam), computer vision, medical informatics, audio, database mining, 
+and other areas.
+</p>
+
+</div>
+</body>
+</html>

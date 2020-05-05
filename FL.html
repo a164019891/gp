@@ -1,0 +1,549 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- IE将使用最新的引擎渲染网页 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 页面的宽度与设备屏幕的宽度一致初始缩放比例 1:1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!-- Bootstrap -->
+<script type="text/javascript" src="js/jquery.min.js">
+</script>
+<script type="text/javascript" src="js/bootstrap.min.js">
+</script>
+
+
+<!-- Stylesheets -->
+ 
+<link href="css/main.css" rel="stylesheet" type="text/css"/>
+<link href="css/syntax.css" rel="stylesheet" type="text/css"/>
+
+
+<!--时间-->
+<script type="text/javascript">
+function getCurDate()  
+{  
+ var d = new Date();  
+ var week;  
+ switch (d.getDay()){  
+ case 1: week="星期一"; break;  
+ case 2: week="星期二"; break;  
+ case 3: week="星期三"; break;  
+ case 4: week="星期四"; break;  
+ case 5: week="星期五"; break;  
+ case 6: week="星期六"; break;  
+ default: week="星期天";  
+ }  
+ var years = d.getFullYear();  
+ var month = add_zero(d.getMonth()+1);  
+ var days = add_zero(d.getDay());  
+ var hours = add_zero(d.getHours());  
+ var minutes = add_zero(d.getMinutes());  
+ var seconds=add_zero(d.getSeconds());  
+ var ndate = years+"年"+month+"月"+days+"日 "+hours+":"+minutes+":"+seconds+" "+week;  
+ //yyyy-mm-dd-hh-mm-ss
+ var time = document.getElementById("time");
+     time.innerHTML= ndate;  
+}  
+ //自动补0  
+function add_zero(temp)  
+{  
+ if(temp<10) return "0"+temp;  
+ else return temp;  
+}  
+//使用定时器每秒向div写入当前时间
+setInterval("getCurDate()",1000); 
+</script>
+
+<!--
+<script type="text/javascript">
+var t = null;
+function time()
+{
+ dt = new Date();
+ var y=dt.getFullYear();
+ var mon=dt.getMonth();
+ var d=dt.getDay();
+ var h=dt.getHours();
+ var m=dt.getMinutes();
+ var s=dt.getSeconds();
+ document.getElementById("timeShow").innerHTML=y+":"+h+":"+m+":"+s;
+ t = setTimeout(time,1000);    
+} 
+window.onload=function()
+{
+	time()
+}
+</script>
+
+<script type="text/javascript">
+
+</script>
+
+-->
+
+<title>Full List
+</title>
+
+</head>
+
+<body>
+
+<!-- 导航栏 -->
+<div class="navbar navbar-default navbar-static-top" role="navigation" >
+  <div class="container">
+         <div class="navbar-header">
+             <button type="button" class="navbar-toggle collapsed"
+              data-toggle="collapse" data-target="#navbar"
+              aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+             </button>
+             <a href="##" class="navbar-brand">
+             </a>
+           </div>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="./index.html">首页
+                    </a>
+                </li>
+                <li><a href="./Research.html">Research
+                </a> 
+                </li>
+                <li><a href="./Publications.html">Publications
+                </a> 
+                </li>
+                <li><a href="./People.html">People
+                </a> 
+                </li>
+                <li ><a href="./Activities.html">Activities
+                </a> 
+                </li>
+                <li><a href="./Teaching.html">Teaching
+                </a> 
+                </li>
+                 <li class="dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Interests
+                    <span class="caret">
+                    </span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li>
+                        <a href="./CV.html">Computer Vision
+                        </a> 
+                        </li>
+                        <li>
+                        <a href="./ML.html">Machine Learning
+                        </a>
+                        </li>
+                        <li >
+                        <a href="./MM.html">Multimedia
+                        </a>
+                        </li>
+                    </ul>        
+                </li>
+            </ul> 
+   
+</div>
+</div>
+
+
+
+<div class="container">
+ 
+<!--lunwen-->
+<h2>Full List
+</h2>   
+<h3>2020:
+</h3>
+
+<ul type="none">
+
+  <li id="h.1" class="pub" style="margin-bottom:-10px;">
+    <strong>Set and Rebase: Determining the Semantic Graph Connectivity for Unsupervised Cross Modal Hashing
+    </strong>, Weiwei Wang, Yuming Shen,   Haofeng Zhang, Yazhou Yao, Li Liu, International Joint  
+Conference on Artificial Intelligence (
+    <strong>IJCAI
+    </strong>), 2020.
+    </li>
+<hr />
+
+  <li id="h.2" class="pub" style="margin-bottom:-10px;">
+    <strong>Web-Supervised Network for Fine-Grained Visual Classification
+    </strong>, Chuanyi Zhang, Yazhou Yao*, Jiachao Zhang, Jiaxin Chen, Pu Huang, Jian Zhang, Zhenmin Tang, IEEE International 
+Conference on Multimedia &amp; Expo (
+    <strong>ICME
+    </strong>), 2020. [
+    <a class="dhtgD aw5Odc" href=
+"https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2FNUST-Machine-Intelligence-Laboratory%2FWSNFG&amp;sa=D&amp;sntz=1&amp;usg
+=AFQjCNGL5ZX4kT8lUSFQF-gAOnVUYHOgaw" target="_blank">Code
+</a>] 
+
+</li>
+
+<hr />
+
+  <li id="h.3" class="pub" style="margin-bottom:-10px;">
+    <strong>Classification Constrained Discriminator for Domain Adaptive Semantic Segmentation
+    </strong>, Tao Chen, Jian Zhang, Guosen Xie, Yazhou Yao*, Xiaoshui Huang, Zhenmin Tang, IEEE International 
+Conference on Multimedia &amp; Expo (
+    <strong>ICME
+    </strong>), 2020. [
+    <a class="dhtgD aw5Odc" href=
+"https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2FNUST-Machine-Intelligence-Laboratory%2Fccd&amp;sa=D&amp;sntz=1&amp;usg=A
+FQjCNFziY9icEuvp96Iyjt1GgoFSDdO8w" target="_blank">Code
+    </a>] 
+    </li>
+    
+<hr />
+
+  <li id="h.4" class="pub" style="margin-bottom:-10px;">
+    <strong>HSI Road: A Hyper Spectral Image Dataset for Road Segmentation 
+    </strong>, Jiarou Lu, Huafeng Liu, Yazhou Yao*, Shuyin Tao, Zhenmin Tang, Jianfeng Lu, IEEE International Conference on Multimedia
+&amp; Expo (
+    <strong>ICME
+    </strong>), 2020. [
+    <a class="dhtgD aw5Odc" href=
+"https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2FNUST-Machine-Intelligence-Laboratory%2Fhsi_road&amp;sa=D&amp;sntz=1&amp;
+usg=AFQjCNFDBPZ9VKRNQJh-tehNbGOtY3aETQ" target="_blank">Dataset
+    </a>]  
+    </li>
+    
+<hr />
+
+  <li id="h.5" class="pub" style="margin-bottom:-10px;">
+    <strong>Exploiting Web Images for Multi-output Classification: From  Category to Subcategories
+    </strong>, Yazhou Yao, Fumin Shen, Guosen Xie, Li Liu, Fan Zhu, Jian Zhang, Heng-Tao Shen, IEEE 
+Transactions on Neural Networks and Learning Systems (
+    <strong>TNNLS
+    </strong>), 2020. [
+    <a class="dhtgD aw5Odc" href=
+"https://www.google.com/url?q=https%3A%2F%2Fieeexplore.ieee.org%2Fdocument%2F8978766&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHEFTh3j9dP
+ZoXmGz9FgzBtioV79w" target="_blank">Link
+    </a>]
+    </li>
+    
+<hr />
+
+  <li id="h.6" class="pub" style="margin-bottom:-10px;">
+    <strong>Approximate Kernel Selection via Matrix Approximation
+    </strong>,   Lizhong Ding, Shizhong Liao, Yong Liu, Li Liu, Fan Zhu, Yazhou Yao, Ling Shao, and Xin Gao, IEEE Transactions on 
+  Neural Networks and Learning Systems (
+    <strong>TNNLS
+    </strong>), 2020. [
+    <a class="dhtgD aw5Odc" href=
+"https://www.google.com/url?q=https%3A%2F%2Fieeexplore.ieee.org%2Fdocument%2F8959405&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGu-1hoU1TK
+HusT5wNZIgpj2jNzgg" target="_blank">Link
+    </a>]
+    </li>
+    
+<hr />
+
+</ul>
+
+<h3>2019:
+</h3>
+
+<ul type="none">
+   <li id="h.7" class="pub" style="margin-bottom:-10px;">
+    <strong>Web-Supervised Network with Softly Update-Drop Training for Fine-Grained Visual Classification
+    </strong>, Chuanyi Zhang, Yazhou Yao
+    <strong>*
+    </strong>, Huafeng Liu, Guosen Xie, Xiangbo Shu, Tianfei Zhou, Zheng Zhang, Fumin Shen, Zhenmin Tang, AAAI Conference on 
+  Artificial Intelligence (
+    <strong>AAAI
+    </strong>), 2020. [
+    <a class="dhtgD aw5Odc" href=
+"https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2FNUST-Machine-Intelligence-Laboratory%2FSoftly-Update-Drop&amp;sa=D&amp;s
+ntz=1&amp;usg=AFQjCNFXRMaPFW19LRD8n1IbEVCEJFALug" target="_blank">Code
+    </a>]
+    </li>
+    
+<hr />
+
+  <li id="h.8" class="pub" style="margin-bottom:-10px;">
+    <strong>Motion-Attentive Transition for Zero-Shot Video Object Segmentation
+    </strong>, Tianfei Zhou, Shunzhou Wang, Yi Zhou, Yazhou Yao, Jianwu Li, Ling Shao, AAAI Conference on Artificial Intelligence (
+    <strong>AAAI
+    </strong>), 2020. [
+    <a class="dhtgD aw5Odc" href=
+"https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2Ftfzhou%2FMATNet&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHJ2r-o_Ar2CBuGpH0z9e4t
+FrWjcw" target="_blank">Code
+    </a>] 
+    </li>
+    
+<hr />
+  <li id="h.9" class="pub" style="margin-bottom:-10px;">
+    <strong>Towards Automatic Construction of Diverse, High-quality Image Datasets
+    </strong>, Yazhou Yao, Jian Zhang, Fumin Shen, Li Liu, Fan Zhu, Dongxiang Zhang, and Heng-Tao Shen, IEEE Transactions on 
+Knowledge and Data Engineering (
+    <strong>TKDE
+    </strong>), 2019. [
+    <a class="dhtgD aw5Odc" href=
+"https://www.google.com/url?q=https%3A%2F%2Fieeexplore.ieee.org%2Fdocument%2F8658155%2Fauthors%23authors&amp;sa=D&amp;sntz=1&amp;u
+sg=AFQjCNFJNno_9tKv_sKYN6W6lNrLRqxWPg" target="_blank">Link
+    </a>, 
+    <a class="dhtgD aw5Odc" href=
+"http://www.google.com/url?q=http%3A%2F%2Fwww.multimediauts.org%2Fdataset%2FWSID-100.html&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGu2pk0
+SqmDHkgcHGry7s540L4csA" target="_blank">Project
+    </a>]
+    <strong> 
+    </strong>
+    </li>
+<hr />
+
+  <li id="h.10" class="pub" style="margin-bottom:-10px;">
+    <strong>SegEQA: Video Segmentation based Visual Attention for Embodied Question Answering
+    </strong>, Haonan Luo, Guosheng Lin, Zichuan Liu, Fayao Liu, Zhenmin Tang, and Yazhou Yao
+    <strong>,
+    </strong> IEEE
+ International Conference on Computer Vision (
+    <strong>ICCV
+    </strong>), 2019. [
+    <a class="dhtgD aw5Odc" href= 
+"http://www.google.com/url?q=http%3A%2F%2Fopenaccess.thecvf.com%2Fcontent_ICCV_2019%2Fhtml%2FLuo_SegEQA_Video_Segmentation_Based_V
+isual_Attention_for_Embodied_Question_Answering_ICCV_2019_paper.html&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNE62Y6jLx7FJwvL2ow5VWTx7XmV4
+A" target="_blank">Link
+    </a>]
+    </li>
+    
+<hr />
+
+  <li id="h.11" class="pub" style="margin-bottom:-10px;">
+    <strong>Attentive Region Embedding Network for Zero-shot Learning
+    </strong>,
+ Guo-Sen Xie, Li Liu, Xiao-Bo Jin, Fan Zhu, Zheng Zhang, Jie Qin, Yazhou Yao, and Ling Shao, IEEE International Conference on 
+Computer Vision and Pattern Recognition (
+    <strong>CVPR
+    </strong>), 2019. [
+    <a class="dhtgD aw5Odc" href=
+"http://www.google.com/url?q=http%3A%2F%2Fopenaccess.thecvf.com%2Fcontent_CVPR_2019%2Fpapers%2FXie_Attentive_Region_Embedding_Netw
+ork_for_Zero-Shot_Learning_CVPR_2019_paper.pdf&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHd991Wt26bpzBKpSZOOGIVvKleTQ" target="_blank">
+Link
+    </a>]
+    </li>
+    
+<hr />
+
+  <li id="h.12" class="pub" style="margin-bottom:-10px;">
+    <strong>Dynamically Visual Disambiguation of Keyword-based Image Search 
+    </strong>, Yazhou Yao, Zeren Sun, Fumin Shen, Li Liu, Limin Wang, Fan Zhu, Lizhong Ding, Gangshan Wu, Ling Shao, International
+    Joint Conference on Artificial Intelligence (
+    <strong>IJCAI
+    </strong>), 2019. [
+    <a class="dhtgD aw5Odc" href=  
+"https://www.google.com/url?q=https%3A%2F%2Fwww.ijcai.org%2Fproceedings%2F2019%2F0140.pdf&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNEYC-s2
+vxHbziNMiPO1Lkma6-CbMA" target="_blank">Link
+    </a>]
+    </li>
+    
+<hr />
+  <li id="h.12.1" class="pub" style="margin-bottom:-10px;">
+    <strong>Clustering-driven Unsupervised Deep Hashing for Image Retrieval 
+    </strong>, Yifan Gu, Shidong Wang, Haofeng Zhang,
+    <strong>Yazhou Yao
+    </strong>, Wankou Yang, Li Liu, Neurocomputing, 2019.
+    </li>
+    
+<hr />
+  <li id="h.12.2" class="pub" style="margin-bottom:-10px;">
+    <strong>Road Segmentation with Image-LiDAR Data Fusion in Deep Neural Network 
+    </strong>, Huafeng Liu, 
+    <strong>Yazhou Yao
+    </strong>, Zeren Sun, Xiangrui Li, Ke Jia, Zhenming Tang, Multimedia Tools and Applications, 2019. 
+    </li>
+    
+<hr />
+
+</ul>
+
+
+<h3>2018
+</h3>
+
+<ul type="none">
+
+  <li id="h.13" class="pub" style="margin-bottom:-10px;">
+    <strong>Extracting Privileged Information for Enhancing Classifier Learning
+    </strong>, Yazhou Yao, Fumin Shen, Jian Zhang, Li Liu, Zhenmin Tang and Ling Shao, IEEE Transactions on Image Processing
+<em> </em>(
+    <strong>TIP
+    </strong>), 2018. [
+    <a class="dhtgD aw5Odc" href=
+"https://www.google.com/url?q=https%3A%2F%2Fieeexplore.ieee.org%2Fdocument%2F8463491%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNFN_Kdm6T
+XwyCY022sRtm_69lfClg" target="_blank">Link
+    </a>]
+    </li>
+    
+<hr />
+
+  <li id="h.14" class="pub" style="margin-bottom:-10px;">
+    <strong>Extracting Multiple Visual Senses for Web Learning
+    </strong>, Yazhou Yao, Fumin Shen, Jian Zhang, Li Liu, Zhenmin Tang and Ling Shao, IEEE Transactions on Multimedia (
+    <strong>TMM
+    </strong>), 2018. [
+    <a class="dhtgD aw5Odc" href=
+"https://www.google.com/url?q=https%3A%2F%2Fieeexplore.ieee.org%2Fdocument%2F8386672%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNEtfxFBru
+kf-EWO62xrycBWD4S0sA" target="_blank">Link
+    </a>]
+    </li>
+    
+<hr />
+
+  <li id="h.15" class="pub" style="margin-bottom:-10px;">
+    <strong>Extracting Privileged Information from Untagged Corpora for Classifier Learning
+    </strong>, Yazhou Yao, Jian Zhang, Fumin Shen, Wankou Yang, Xiansheng Hua and Zhenmin Tang, International Joint
+ Conference on Artificial Intelligence (
+    <strong>IJCAI
+    </strong>), 2018. [<a class="dhtgD aw5Odc" href=
+"https://www.google.com/url?q=https%3A%2F%2Fwww.ijcai.org%2Fproceedings%2F2018%2F0151.pdf&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNF63Iuu
+45ihhfyj9fs9d-FD9D48mA" target="_blank">Link
+    </a>]
+    </li>
+    
+<hr />
+
+  <li id="h.16" class="pub" style="margin-bottom:-10px;">
+    <strong>Discovering and Distinguishing Multiple Visual Senses for 
+Polysemous Words
+    </strong>,
+    <strong> 
+    </strong>Yazhou Yao, Jian Zhang, Fumin Shen, Wankou Yang, Pu Huang and Zhenmin Tang, AAAI 
+Conference on Artificial Intelligence (
+    <strong>AAAI
+    </strong>), 2018. [<a class="dhtgD aw5Odc" href=
+"https://www.google.com/url?q=https%3A%2F%2Fwww.aaai.org%2Focs%2Findex.php%2FAAAI%2FAAAI18%2Fpaper%2Fview%2F16538%2F15728&amp;sa=D
+&amp;sntz=1&amp;usg=AFQjCNFsN46YB4TcUF2-TE1h55_fduaTZw" target="_blank">Link
+     </a>] 
+     </li>
+     
+<hr />
+ <li id="h.16.1" class="pub" style="margin-bottom:-10px;">
+    <strong>Exploiting Textual and Visual Features for Image Categorization 
+    </strong>,
+    <strong> Yazhou Yao
+    </strong>, Wankou Yang, Pu Huang, Qiong Wang, Yunfei Cai and Zhenmin Tang, Pattern Recognition Letters, 2018.
+    </li>
+<hr />
+
+ <li id="h.16.2" class="pub" style="margin-bottom:-10px;">
+    <strong>Deep Representation Learning for Road Detection using Siamese Network
+    </strong>, Huafeng Liu, Xiaofeng Han, Xiangrui Li,
+    <strong> Yazhou Yao
+    </strong>, Pu Huang, Zhenmin Tang, Multimedia Tools and Applications, 2018.
+    </li> 
+<hr />
+
+ <li id="h.16.3" class="pub" style="margin-bottom:-10px;">
+    <strong>Collaborative Representation Based Local Discriminant Projection for Feature Extraction
+    </strong>, Pu Huang, Tao Li, Guangwei Gao, 
+    <strong> Yazhou Yao
+    </strong>and Geng Yang, Digital Signal Processing, 2018. 
+    </li>    
+    
+<hr />
+ 
+
+</ul>
+
+
+<h3>2017
+</h3>
+
+
+<ul type="none">
+
+  <li id="h.17" class="pub" style="margin-bottom:-10px;">
+    <strong>Exploiting Web Images for Dataset Construction: A Domain Robust 
+Approach
+    </strong>,
+    <strong> 
+    </strong>Yazhou Yao, Jian Zhang, Fumin Shen, Xian-Sheng Hua, Jingsong Xu and Zhenmin Tang, IEEE 
+Transactions on Multimedia (
+    <strong>TMM
+    </strong>), 2017. [<a class="dhtgD aw5Odc" href=
+"https://www.google.com/url?q=https%3A%2F%2Fieeexplore.ieee.org%2Fabstract%2Fdocument%2F7882707%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQ
+jCNG_Q3AhsxihK471TWUjjD6W52wL8A" target="_blank">Link
+    </a>]
+    </li>
+    
+<hr />
+
+  <li id="h.17.1" class="pub" style="margin-bottom:-10px;">
+    <strong>Deep Learning for Person Reidentification Using Support Vector Machines
+    </strong>, Mengyu Xu, Zhenmin Tang, 
+    <strong> Yazhou Yao
+    </strong>, Lingxiang Yao, Huafeng Liu and Jingsong Xu, Advances in Multimedia, 2017.
+    </li>    
+    
+<hr />
+
+  <li id="h.17.2" class="pub" style="margin-bottom:-10px;">
+    <strong>A New Web-supervised Method for Image Dataset Constructions
+    </strong>, 
+    <strong> Yazhou Yao
+    </strong>, Jian Zhang, Fumin Shen, Xian-Sheng Hua, Jingsong Xu and Zhenmin Tang, Neurocomputing, 2017.
+
+    </li>    
+    
+<hr />
+
+</ul>
+
+<h3>2016
+</h3>
+
+<ul type="none">
+
+  <li id="h.18" class="pub" style="margin-bottom:-10px;">
+    <strong>A Domain Robust Approach for Image Dataset Construction
+    </strong>,Yazhou Yao, Xiansheng Hua, Fumin Shen, Jian Zhang and Zhenmin Tang, ACM Conference on Multimedia (
+    <strong>ACM MM
+    </strong>), 2016. [<a class="dhtgD aw5Odc" href=
+"https://www.google.com/url?q=https%3A%2F%2Fdl.acm.org%2Fcitation.cfm%3Fid%3D2967213&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGs8SCIKZSKo
+JFYMpCvdbg4bLOFRQ" target="_blank">Link
+    </a>]
+    </li>
+    
+<hr />
+
+
+  <li id="h.19" class="pub" style="margin-bottom:-10px;">
+    <strong>Automatic Image Dataset Construction with Multiple Textual Metadata
+    </strong>,Yazhou Yao, Jian Zhang, Fumin Shen, Xian-Sheng Hua, Jingsong Xu and Zhenmin Tang, IEEE Conference on 
+Multimedia and Expo (
+    <strong>ICME
+    </strong>), 2016. [<a class="dhtgD aw5Odc" href=
+"https://www.google.com/url?q=https%3A%2F%2Fieeexplore.ieee.org%2Fabstract%2Fdocument%2F7552988%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQ
+jCNEkvZOYfNVo7eK8WCrJvIJBfwRgZA" target="_blank">Link
+    </a>] 
+    </li>
+<hr />
+ 
+  <li id="h.19.1" class="pub" style="margin-bottom:-10px;">
+    <strong>Extracting Visual Knowledge from the Internet: Making Sense of Image Data
+    </strong>, 
+    <strong> Yazhou Yao
+    </strong>, Jian Zhang, Xian-Sheng Hua, Fumin Shen, and Zhenmin Tang, International Conference on Multimedia Modeling (
+    <strong>MMM
+    </strong>
+    ), 2016.
+    </li>    
+    
+<hr />
+    
+   
+<hr />
+
+</ul> 
+
+
+</div>
+
+
+</body>
+</html>

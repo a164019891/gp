@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- IE将使用最新的引擎渲染网页 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 页面的宽度与设备屏幕的宽度一致初始缩放比例 1:1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!-- Bootstrap -->
+<script type="text/javascript" src="js/jquery.min.js">
+</script>
+<script type="text/javascript" src="js/bootstrap.min.js">
+</script>
+
+
+<!-- Stylesheets -->
+ 
+<link href="css/main.css" rel="stylesheet" type="text/css"/>
+<link href="css/syntax.css" rel="stylesheet" type="text/css"/>
+
+
+<!--时间-->
+<script type="text/javascript">
+function getCurDate()  
+{  
+ var d = new Date();  
+ var week;  
+ switch (d.getDay()){  
+ case 1: week="星期一"; break;  
+ case 2: week="星期二"; break;  
+ case 3: week="星期三"; break;  
+ case 4: week="星期四"; break;  
+ case 5: week="星期五"; break;  
+ case 6: week="星期六"; break;  
+ default: week="星期天";  
+ }  
+ var years = d.getFullYear();  
+ var month = add_zero(d.getMonth()+1);  
+ var days = add_zero(d.getDay());  
+ var hours = add_zero(d.getHours());  
+ var minutes = add_zero(d.getMinutes());  
+ var seconds=add_zero(d.getSeconds());  
+ var ndate = years+"年"+month+"月"+days+"日 "+hours+":"+minutes+":"+seconds+" "+week;  
+ //yyyy-mm-dd-hh-mm-ss
+ var time = document.getElementById("time");
+     time.innerHTML= ndate;  
+}  
+ //自动补0  
+function add_zero(temp)  
+{  
+ if(temp<10) return "0"+temp;  
+ else return temp;  
+}  
+//使用定时器每秒向div写入当前时间
+setInterval("getCurDate()",1000); 
+</script>
+
+<!--
+<script type="text/javascript">
+var t = null;
+function time()
+{
+ dt = new Date();
+ var y=dt.getFullYear();
+ var mon=dt.getMonth();
+ var d=dt.getDay();
+ var h=dt.getHours();
+ var m=dt.getMinutes();
+ var s=dt.getSeconds();
+ document.getElementById("timeShow").innerHTML=y+":"+h+":"+m+":"+s;
+ t = setTimeout(time,1000);    
+} 
+window.onload=function()
+{
+	time()
+}
+</script>
+
+<script type="text/javascript">
+
+</script>
+
+-->
+<title>Activities
+</title>
+
+</head>
+
+<body>
+
+<!-- 导航栏 -->
+<div class="navbar navbar-default navbar-static-top" role="navigation" >
+  <div class="container">
+         <div class="navbar-header">
+             <button type="button" class="navbar-toggle collapsed"
+              data-toggle="collapse" data-target="#navbar"
+              aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+             </button>
+             <a href="##" class="navbar-brand">
+             </a>
+           </div>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="./index.html">首页
+                    </a>
+                </li>
+                <li><a href="./Research.html">Research
+                </a> 
+                </li>
+                <li><a href="./Publications.html">Publications
+                </a> 
+                </li>
+                <li><a href="./People.html">People
+                </a> 
+                </li>
+                <li class="active"><a href="./Activities.html">Activities
+                </a> 
+                </li>
+                <li><a href="./Teaching.html">Teaching
+                </a> 
+                </li>
+                 <li class="dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Interests
+                    <span class="caret">
+                    </span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li>
+                        <a href="./CV.html">Computer Vision
+                        </a> 
+                        </li>
+                        <li>
+                        <a href="./ML.html">Machine Learning
+                        </a>
+                        </li>
+                        <li >
+                        <a href="./MM.html">Multimedia
+                        </a>
+                        </li>
+                    </ul>        
+                </li>
+            </ul> 
+   
+</div>
+</div>
+
+
+
+<div class="container">
+
+<!-- xueshuchengjiu-->
+
+<h2>Research and academic employment
+</h2>
+
+<div class="panel panel-default">
+<div class="panel-heading"><b>Area Chair:
+</b>
+</div>
+<div class="panel-body">
+  <ul>
+    <li>
+      <p>IEEE International Conference on Multimedia and Expo (ICME): 2020.
+      </p>
+    </li>
+  </ul>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading">
+  <b>Reviewers For Journals:
+  </b>
+</div>
+<div class="panel-body">
+  <ul>
+  <li>
+  <p>IEEE Transactions on Knowledge and Data Engineering
+  </p>
+  </li>
+  <li>
+  <p>IEEE Transactions on Multimedia
+  </p>
+  </li>
+  <li>
+  <p>IEEE Transactions on Image Processing
+  </p>
+  </li>
+  <li>
+  <p>IEEE Transactions on Neural Networks and Learning Systems
+  </p>
+  </li>
+</ul>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading">
+  <b>PC Members For Conferences:
+  </b>
+</div>
+<div class="panel-body">
+  <ul>
+  <li>
+  <p>IEEE Conference on Computer Vision and Pattern Recognition (CVPR): 2020.
+  </p>
+  </li>
+  <li>
+  <p>AAAI Conference on Artificial Intelligence (AAAI): 2019, 2020.
+  </p>
+  </li>
+  <li>
+  <p>International Joint Conference on Artificial Intelligence (IJCAI): 2018, 2019, 2020.
+  </p>
+  </li>
+  <li>
+  <p>IEEE International Conference on Data Engineering (ICDE): 2019.
+  </p>
+  </li>
+  <li>
+  <p>ACM Conference on Multimedia (ACM MM): 2018.
+  </p>
+  </li>
+</ul>
+</div>
+</div>
+
+
+</body>
+</html>
